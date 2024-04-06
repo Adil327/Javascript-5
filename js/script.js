@@ -58,7 +58,7 @@ const clearOutput = () => {
 const betterFormatting = () => {
     let text = document.getElementById("input-field").value;
     if (text.length < 3) {
-        showNotification("Please enter your words correctly!", "error");
+        showNotification("First write some text in input field!", "error");
         return;
     }
     let textFirstLetter = text.charAt(0).toUpperCase();
@@ -87,7 +87,7 @@ const printCities = () => {
 const addCity = () => {
     let city = document.getElementById("input-field").value;
     if (!city) {
-        showNotification("Please enter your city name", "error");
+        showNotification("Write city name you want to add", "error");
         return;
     }
 
@@ -113,7 +113,7 @@ const addCity = () => {
 const checkCity = () => {
     let checkCity = document.getElementById("input-field").value;
     if (!checkCity) {
-        showNotification("Please enter a city name correctly", "error");
+        showNotification("Please enter city name correctly", "error");
         return;
     }
 
@@ -129,14 +129,14 @@ const checkCity = () => {
         }
     }
 
-    document.getElementById("output").innerHTML = `Sorry, we couldn't find your city <span class='text-danger fw-bold'>${checkCityInCapitalize}</span> in the list`;
+    document.getElementById("output").innerHTML = `Sorry, We couldn't find your city <span class='text-danger fw-bold'>${checkCityInCapitalize}</span> in the list`;
 };
 
 // Find word in text
 const findWord = () => {
     let word = document.getElementById("input-field").value;
     if (!word) {
-        showNotification("Please enter a word correctly", "error");
+        showNotification("Please enter word correctly", "error");
         return;
     }
 

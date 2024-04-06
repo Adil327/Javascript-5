@@ -25,3 +25,9 @@ footer,
 #original-str {
   background-color: var(--primary-color);
 }
+
+@media only screen and (max-width:550px) {
+  #buttons button {
+    min-width: 90%;
+  }
+}

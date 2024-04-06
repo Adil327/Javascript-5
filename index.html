@@ -12,11 +12,13 @@
     <title>Javascript-5</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Assignments</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -25,27 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link active" aria-current="page" href="#">Chapter 21-25</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -58,39 +40,82 @@
     </header>
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col">
 
+            <!-- Heading -->
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 class="text-center">Chapter # 21 - 25 | Strings & It's Methods</h3>
+                </div>
+            </div>
+            <hr />
+
+            <!-- Input -->
+            <div class="row mt-5">
+                <div class="col-12 col-md-6">
+                    <h4 class="text-center">Input</h4>
+                    <div class="border border-secondary rounded-1 h-75 p-3 d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-transparent" placeholder="Type your text here"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Clear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Original String -->
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <h4 class="text-center">Original String</h4>
+                    <div class="border border-secondary rounded-1 h-75 py-3 px-5 d-flex align-item-center"
+                        id="original-str">
+                        <div class=" text-center text-white mb-0">
+                            I love my country Pakistan <br>
+                            I like my city Faisalabad <br>
+                            I love my Homeland
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons Div -->
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 text-center">
+                    <h4>Buttons</h4>
+                    <div class="border border-secondary rounded-1 p-4" id="buttons">
+                        <button class="btn btn-sm btn-danger mb-2">Convert to Lowercase</button>
+                        <button class="btn btn-sm btn-danger mb-2">Convert to Uppercase</button>
+                        <button class="btn btn-sm btn-danger mb-2">Convert to Capitalize</button>
+                        <button class="btn btn-sm btn-danger mb-2">Better Formating</button>
+                        <button class="btn btn-sm btn-danger mb-2">Print All Cities</button>
+                        <button class="btn btn-sm btn-danger mb-2">Add Your City In List</button>
+                        <button class="btn btn-sm btn-danger mb-2">Check Your City In List</button>
+                        <button class="btn btn-sm btn-danger mb-2">Find This Word</button>
+                        <button class="btn btn-sm btn-danger mb-0">Replace This Word</button>
+                    </div>
+                </div>
+
+                <!-- Output / Result -->
+                <div class="col-12 col-md-6 mt-3 mt-md-0 text-center">
+                    <h4>Output / Result</h4>
+                    <div class="border border-secondary rounded-1 p-4" id="output">
+
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary text-capitalize mt-3">clear output</button>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
 
+    <!-- Footer -->
+    <footer class="py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-white mb-0">&copy; 2024. Assignments By <a href="https://umairahmad.net"
+                            class="text-white fw-bold text-decoration-none">www.umairahmad.net</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Bootstrap 5.3.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

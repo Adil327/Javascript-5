@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #1d3557;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0faef;
+}
+
+#buttons button {
+  min-width: 49.5%;
+}
+
+#output {
+  min-height: 234px;
+}
+
+header,
+footer,
+#original-str {
+  background-color: var(--primary-color);
+}
